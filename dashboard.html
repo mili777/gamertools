@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/85b7e46fbb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gamer Tools</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header wrap">
+            <div class="header-brand"><a href="index.html">gamertools.gg</a></div>
+            <nav>
+                <ul id="nav_menu">
+                    <li><a href="index.html">Home</a></li>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown()" class="dropbtn">Games <span>&#9660;</span></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="dashboard.html">Pet Sim X</a>
+                            <a href="dashboard.html">Roblox</a>
+                            <a href="dashboard.html">Call of Duty</a>
+                        </div>
+                    </div>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+                <div id="toggleMobile" class="mobile-menu">
+                    <img src="img/vectors/bars.svg" alt="menu">
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <section class="section-dashboard">
+        <div class="dashboard wrap">
+            <div class="dashboard-top">
+                <h1>Pet Sim X</h1>
+                <p>Welcome to the official Pet Simulator X value list. We update this value list daily with new gem prices. This is the perfect tool for all PSX traders. Our prices will save you from getting scammed in bad trades!</p>
+            </div>
+            <div class="dashboard-bottom">
+                <p>3,429 Traders Online</p>
+                <p>42,294 Discord Members</p>
+                <a href="#" class="btn-orange">Join Discord</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section-dashboard-tabs">
+        <div class="dashboard-tabs wrap">
+            <div id="tabs" class="tabs">
+                <button class="btn-tab tablink tab-active" onclick="openTab(event,'home')"><img src="img/vectors/home.svg" alt=""> Home</button>
+                <button class="btn-tab tablink mobile-hide" onclick="openTab(event,'pet_database')"><img src="img/vectors/database.svg" alt="">
+                    Pet Database</button>
+                <button class="btn-tab tablink mobile-hide" onclick="openTab(event,'pet_damage_list')"><img src="img/vectors/damage.svg" alt="">
+                    Pet Damage List</button>
+                <button class="btn-tab tablink mobile-hide" onclick="openTab(event,'interest_calculator')"><img src="img/vectors/dollar.svg"
+                        alt=""> Interest Calculator</button>
+                <button id="tab_more" onclick="showTabMobile()" class="dropbtn btn-tab mobile-hide">More <span>&#9660;</span></button>
+                <button id="tab_less" onclick="hideTabMobile()" class="dropbtn btn-tab mobile-hide less">Less <span>&#9650;</span></button>
+            </div>
+
+            <div id="home" class="tab">
+                <h2>News</h2>
+                <section class="section-latest-blog-posts">
+                    <div class="latest-blog-posts">
+                        <div class="latest-blog-posts-grid">
+                            <div class="latest-blog-post">
+                                <a href="#">
+                                    <img src="img/blogs/blog-1.png" alt="Blog">
+                                </a>
+                                <div class="latest-blog-post-content">
+                                    <p><span>03 March 2022</span></p>
+                                    <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing odio pulvinar eu porta. Ut nunc tristique mattis tincidunt ullamcorper cursus. Vulputate pulvinar accumsan enim vitae.
+                                    </p>
+                                </div>
+                                <div class="read-more">
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                            <div class="latest-blog-post">
+                                <a href="#">
+                                    <img src="img/blogs/blog-2.png" alt="Blog">
+                                </a>
+                                <div class="latest-blog-post-content">
+                                    <p><span>03 March 2022</span></p>
+                                    <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing odio pulvinar eu porta. Ut nunc tristique mattis tincidunt ullamcorper cursus. Vulputate pulvinar accumsan enim vitae.
+                                    </p>
+                                </div>
+                                <div class="read-more">
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn-orange" href="#">View All</a>
+                    </div>
+                </section>
+            </div>
+
+            <div id="pet_database" class="tab" style="display:none">
+                <h2>Pet database</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate a ducimus temporibus vel error similique, tempore, adipisci, possimus atque expedita excepturi dolorum officia recusandae? At, explicabo et maxime rem itaque autem velit
+                    quidem ad unde veritatis, aliquam quibusdam magnam corrupti. Quae non nisi voluptatum et eveniet repellat, quo corrupti expedita quod facere debitis, animi in sunt vitae blanditiis ex repudiandae aut cumque. Eius maxime est dolores
+                    dicta eos. Corporis, labore! In accusantium recusandae aspernatur ipsam odit voluptatum velit modi, cum numquam blanditiis impedit ullam vel doloremque totam laboriosam hic magni voluptatibus! Fuga consequuntur expedita, id maiores
+                    placeat quidem eius iste.</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate a ducimus temporibus vel error similique, tempore, adipisci, possimus atque expedita excepturi dolorum officia recusandae? At, explicabo et maxime rem itaque autem velit
+                    quidem ad unde veritatis, aliquam quibusdam magnam corrupti. Quae non nisi voluptatum et eveniet repellat, quo corrupti expedita quod facere debitis, animi in sunt vitae blanditiis ex repudiandae aut cumque. Eius maxime est dolores
+                    dicta eos. Corporis, labore! In accusantium recusandae aspernatur ipsam odit voluptatum velit modi, cum numquam blanditiis impedit ullam vel doloremque totam laboriosam hic magni voluptatibus! Fuga consequuntur expedita, id maiores
+                    placeat quidem eius iste.</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate a ducimus temporibus vel error similique, tempore, adipisci, possimus atque expedita excepturi dolorum officia recusandae? At, explicabo et maxime rem itaque autem velit
+                    quidem ad unde veritatis, aliquam quibusdam magnam corrupti. Quae non nisi voluptatum et eveniet repellat, quo corrupti expedita quod facere debitis, animi in sunt vitae blanditiis ex repudiandae aut cumque. Eius maxime est dolores
+                    dicta eos. Corporis, labore! In accusantium recusandae aspernatur ipsam odit voluptatum velit modi, cum numquam blanditiis impedit ullam vel doloremque totam laboriosam hic magni voluptatibus! Fuga consequuntur expedita, id maiores
+                    placeat quidem eius iste.</p><br>
+            </div>
+
+            <div id="pet_damage_list" class="tab" style="display:none">
+                <h2>Pet damage list</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, minus iusto dolore quidem pariatur labore reprehenderit explicabo vel, debitis sapiente laborum quos cumque sed ea eligendi rem dicta sunt! Minima?</p><br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, minus iusto dolore quidem pariatur labore reprehenderit explicabo vel, debitis sapiente laborum quos cumque sed ea eligendi rem dicta sunt! Minima?</p><br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, minus iusto dolore quidem pariatur labore reprehenderit explicabo vel, debitis sapiente laborum quos cumque sed ea eligendi rem dicta sunt! Minima?</p><br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, minus iusto dolore quidem pariatur labore reprehenderit explicabo vel, debitis sapiente laborum quos cumque sed ea eligendi rem dicta sunt! Minima?</p><br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, minus iusto dolore quidem pariatur labore reprehenderit explicabo vel, debitis sapiente laborum quos cumque sed ea eligendi rem dicta sunt! Minima?</p><br>
+            </div>
+            <div id="interest_calculator" class="tab" style="display:none">
+                <h2>Interest calculator</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ad voluptate assumenda unde! Illo debitis cupiditate eos nisi deserunt provident deleniti repellendus possimus! Itaque molestias commodi minima aperiam consequuntur dolorum
+                    nobis esse. Saepe enim nemo quas aut eligendi ipsa dolorum, omnis corporis qui sapiente itaque accusantium incidunt nisi fugit hic mollitia aspernatur veritatis eum ipsum! Explicabo nostrum, voluptatum ab ipsum eligendi, laboriosam
+                    aut fuga quaerat dolorem corporis beatae quasi labore sint expedita pariatur reiciendis corrupti cum. Voluptatem temporibus, minus illo assumenda necessitatibus tenetur placeat animi inventore sunt suscipit facilis magni pariatur doloribus,
+                    alias voluptas beatae! Dignissimos enim est nisi, veniam similique, culpa explicabo ducimus vitae fugiat iste, cum dolorum? Consectetur temporibus doloremque non tempore enim? Placeat amet fuga a eum, vitae sit earum dolorum! Ullam
+                    animi corrupti, in rerum molestiae doloribus eaque quos dolore, assumenda magni quia deleniti laudantium optio placeat recusandae ad! Voluptates qui ut necessitatibus aperiam maxime quas autem natus. Ipsa quisquam exercitationem quibusdam
+                    laudantium. Sequi quis quisquam beatae sint soluta molestiae nostrum ipsum! Tenetur sit ducimus maiores, porro magnam, non quaerat nulla itaque nostrum neque officiis minima veritatis. Corrupti voluptatum recusandae magnam quo expedita
+                    itaque earum! Error, sequi magni, sapiente ipsa aliquid quidem quisquam iste sit corrupti sed atque ipsum deleniti! Aliquam minima sunt illum suscipit. Neque ratione ut laborum vero rem obcaecati aspernatur. Dolorem, enim ratione ab
+                    voluptates voluptatibus rerum. Adipisci sint provident sit esse aliquam, necessitatibus possimus iure accusantium itaque nisi dolorum culpa officia? In.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-top wrap">
+                <div class="header-brand"><a href="index.html">gamertools.gg</a></div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom wrap">
+                <div class="footer-social">
+                    <a href="#"><img src="img/vectors/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="img/vectors/twitter.svg" alt="Twitter"></a>
+                </div>
+                <div class="footer-games">
+                    <a href="dashboard.html">Pet Sim X</a>
+                    <a href="dashboard.html">Roblox</a>
+                    <a href="dashboard.html">Call of Duty</a>
+                </div>
+            </div>
+            <div class="footer-mobile">
+                <div class="footer-mobile-top wrap">
+                    <div class="footer-mobile-top-line">
+                        <div class="header-brand"><a href="index.html">gamertools.gg</a></div>
+                        <div class="footer-social">
+                            <a href="#"><img src="img/vectors/facebook.svg" alt="Facebook"></a>
+                            <a href="#"><img src="img/vectors/twitter.svg" alt="Twitter"></a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-mobile-bottom wrap">
+                    <div class="footer-games">
+                        <a href="dashboard.html">Pet Sim X</a>
+                        <a href="dashboard.html">Roblox</a>
+                        <a href="dashboard.html">Call of Duty</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

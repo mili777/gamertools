@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/85b7e46fbb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gamer Tools</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header wrap">
+            <div class="header-brand"><a href="index.html">gamertools.gg</a></div>
+            <nav>
+                <ul id="nav_menu">
+                    <li><a href="index.html">Home</a></li>
+                    <div class="dropdown">
+                        <button onclick="toggleDropdown()" class="dropbtn">Games <span>&#9660;</span></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="dashboard.html">Pet Sim X</a>
+                            <a href="dashboard.html">Roblox</a>
+                            <a href="dashboard.html">Call of Duty</a>
+                        </div>
+                    </div>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a class="active" href="contact.html">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+                <div id="toggleMobile" class="mobile-menu">
+                    <img src="img/vectors/bars.svg" alt="menu">
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <section class="section-contact">
+        <div class="contact wrap">
+            <h2>Contact us</h2>
+            <form action="">
+                <div class="form-row">
+                    <div class="form-col">
+                        <label for="name">First name</label>
+                        <input type="text" id="name" placeholder="Your name">
+                    </div>
+                    <div class="form-col">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Your email">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-col">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Your message"></textarea>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-col center">
+                        <input class="btn-transparent-input" type="submit" value="Cancel">
+                        <input class="btn-orange-input" type="submit" value="Send message">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-top wrap">
+                <div class="header-brand"><a href="index.html">gamertools.gg</a></div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom wrap">
+                <div class="footer-social">
+                    <a href="#"><img src="img/vectors/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="img/vectors/twitter.svg" alt="Twitter"></a>
+                </div>
+                <div class="footer-games">
+                    <a href="dashboard.html">Pet Sim X</a>
+                    <a href="dashboard.html">Roblox</a>
+                    <a href="dashboard.html">Call of Duty</a>
+                </div>
+            </div>
+            <div class="footer-mobile">
+                <div class="footer-mobile-top wrap">
+                    <div class="footer-mobile-top-line">
+                        <div class="header-brand"><a href="index.html">gamertools.gg</a></div>
+                        <div class="footer-social">
+                            <a href="#"><img src="img/vectors/facebook.svg" alt="Facebook"></a>
+                            <a href="#"><img src="img/vectors/twitter.svg" alt="Twitter"></a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-mobile-bottom wrap">
+                    <div class="footer-games">
+                        <a href="dashboard.html">Pet Sim X</a>
+                        <a href="dashboard.html">Roblox</a>
+                        <a href="dashboard.html">Call of Duty</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
